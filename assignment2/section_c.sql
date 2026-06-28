@@ -34,11 +34,10 @@ FROM products
 GROUP BY category
 ORDER BY category;
 
-=
+
 SELECT category,
        ROUND(AVG(unit_price), 2) AS avg_unit_price
 FROM products
 GROUP BY category
 HAVING AVG(unit_price) > 2000
 ORDER BY avg_unit_price DESC;
-=
