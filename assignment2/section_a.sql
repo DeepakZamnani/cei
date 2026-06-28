@@ -14,7 +14,7 @@ FROM products;
 SELECT table_name, column_name, constraint_name
 FROM information_schema.key_column_usage
 WHERE constraint_name = 'PRIMARY'
-  AND table_schema = DATABASE();   -- replace DATABASE() with current_schema() in PostgreSQL
+  AND table_schema = DATABASE();  
 
 
 
